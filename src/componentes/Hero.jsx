@@ -4,11 +4,16 @@ const Hero = () => {
     const [showFirst, setShowFirst] = useState(true);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setShowFirst((prev) => !prev);
-    }, 11000);
+    const cycleVideos = () => {
+      setShowFirst(true); 
+      setTimeout(() => setShowFirst(false), 4000);
 
-    return () => clearInterval(interval);
+      return setTimeout(cycleVideos, 11000);
+    };
+
+    const interval = cycleVideos();
+
+    return () => clearTimeout(interval);
   }, []);
 
   return (
@@ -16,7 +21,7 @@ const Hero = () => {
         <div className="absolute inset-0 w-full h-full overflow-hidden">
        
         <video
-          className={`absolute w-full h-full object-cover aspect-video transition-opacity duration-1000 ${
+          className={`absolute w-full h-full object-cover aspect-video transition-opacity duration-[3500ms] ${
             showFirst ? "opacity-100" : "opacity-0"
           }`}
           src="fit-box.mp4"
