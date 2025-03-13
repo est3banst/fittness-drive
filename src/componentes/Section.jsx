@@ -4,9 +4,9 @@ import Card from './Card'
 const Section = () => {
   return (
     <>
-    <div className='w-full flex h-full  gap-6 flex-col'>
-        <section className='flex flex-col py-8 px-4 gap-6'>
-        <p className="anton leading-relaxed text-5xl">
+    <div className='w-full flex h-full gap-6 flex-col'>
+        <section className='flex flex-col py-12 px-4 gap-6'>
+        <p className="anton leading-relaxed text-5xl lg:text-7xl">
   <b className="bg-gradient-to-r from-[#e5691c] to-[#d5601296] bg-clip-text text-transparent">
     TU NUEVO PROYECTO SOS VOS
   </b>
