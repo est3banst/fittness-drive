@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { useState } from 'react'
 
 const Nav = () => {
@@ -13,11 +14,11 @@ const Nav = () => {
    
     <>
      <header className='flex fixed top-0 left-0 z-50 w-full text-xl anton uppercase lg:justify-around gap-4 bg-transparent items-center px-4 py-2'>
-        <div className='w-3/6'>
+        <Link to='/' className='w-3/6'>
         <img
         className='max-w-24'
         src="fitdrive.svg" alt="Fitness Drive logo" />
-        </div>
+        </Link>
        <div className='hidden lg:flex w-full gap-8 justify-around items-center'>
        <ul className='flex gap-8 font-bold '>
             <li className='hover:text-[#e5691c] cursor-pointer'>Clases</li>
@@ -37,7 +38,7 @@ const Nav = () => {
         <div className={`w-6 h-[2px] relative transition-all duration-1000 ease-in-out bg-[#f2f2f2] ${isOpen ? 'opacity-0' : ''}`}></div>
         <div className={`w-6 h-[2px] relative transition-all duration-1000 ease-in-out bg-[#f2f2f2] ${isOpen ? '-rotate-45 -translate-y-3' : ''}`}></div>
        </div>
-       <div className={`bg-gradient-to-b from-[#242424] via-[#272727] to-[#a6611c] flex flex-col h-screen w-full z-0 anton fixed transition-all duration-700 ease-out opacity-0 right-0 ${isOpen ? 'opacity-100 z-[987]' : 'opacity-0 z-0'}`}>
+       <div className={`bg-gradient-to-b from-[#242424] via-[#272727] to-[#a6611c] flex flex-col h-screen w-full overflow-hidden z-0 anton fixed transition-all duration-700 ease-out opacity-0 right-0 ${isOpen ? 'opacity-100 z-[987]' : 'opacity-0 z-0'}`}>
      <img
         className='max-w-24 p-4'
         src="fitdrive.svg" alt="Fitness Drive logo" />

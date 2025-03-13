@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const [showFirst, setShowFirst] = useState(true);
@@ -51,7 +52,11 @@ const Hero = () => {
         </p>
         </section>
         <section className='flex w-full px-6 gap-6'>
-            <button className='bg-[#e5691c] px-7 py-4 hover:bg-white hover:text-[#e5691c] uppercase font-bold cursor-pointer'>EMPEZAR AHORA</button>
+          
+          <Link to='/membresias'>
+          <button className='bg-[#e5691c] px-7 py-4 hover:bg-white hover:text-[#e5691c] uppercase font-bold cursor-pointer'>EMPEZAR AHORA</button>
+          
+          </Link>
             <button className='py-4 px-7 bg-white/10 font-medium border-2 cursor-pointer hover:opacity-60 border-slate-500'>VER AGENDA</button>
         </section>
         </div>
