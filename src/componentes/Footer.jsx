@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const year = new Date().getFullYear();
@@ -60,12 +61,15 @@ const Footer = () => {
             <section>
                 <h2 className='font-bold border-l-4 px-2 mb-2 border-amber-600'>Vinculos</h2>
                 <span className='flex flex-col gap-2 my-4'>
-                <a href="">
-                   Clases </a>
-                <a href="">
-                   Entrenadores </a>
-                <a href="">
-                   Membresías </a>
+                <Link to='/clases'> 
+                Clases
+                </Link>
+                <Link to='/entrenadores'>
+                Entrenadores
+                </Link>
+                <Link to='/membresias'>
+                Membresías
+                </Link>
               
 
                 </span>

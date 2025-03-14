@@ -2,7 +2,7 @@ import React from 'react'
 
 const Memberships = ({ title, desc, save, popular, price, plan , points }) => {
     return (
-      <div className={`group-hover:translate-y-1.5 anton p-6 relative transition-all duration-700 ease-in`}
+      <div className={`hover:translate-y-1.5 transition-all duration-700 ease-in anton p-6 relative`}
         style={{ background: popular }}>
            {save &&  (<span className='bg-green-500 px-2 py-1 rounded-md text-xs absolute top-0 right-0 font-sans text-slate-900'>
                 Ahorras ${save}
@@ -20,7 +20,7 @@ const Memberships = ({ title, desc, save, popular, price, plan , points }) => {
             ))}
           </section>
   
-          <button className='px-6 py-3 border-2 my-2 transition-all duration-300 
+          <button className='px-6 py-3 border-2 my-2 cursor-pointer transition-all duration-300 
             bg-transparent text-white border-white 
             hover:bg-white hover:text-black'>
             COMENZAR

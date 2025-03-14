@@ -116,10 +116,12 @@ export const MemberPlans = () => {
     <Nav />
     </div>
     <div className='bg-[url(/dumbells-memb.jpg)] flex items-center relative bg-no-repeat bg-cover w-full h-[50vh] md:h-screen'>
-  <span className='absolute left-10 md:left-20 top-3/4 -translate-y-1/2 text-5xl md:text-6xl anton text-white'>
+    <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+
+  <span className='absolute left-10 md:left-20 top-3/4 -translate-y-1/2 text-5xl md:text-7xl anton text-white'>
     ELIGE <b className='text-amber-500'>TU CAMINO</b>
   </span>
-  <div className="absolute z-[9999] border-2 bg-[#4f4e4ed8] border-black rounded-full bottom-[-40px] left-1/2 -translate-x-1/2 flex">
+  <div className="absolute z-[777] border-2 bg-[#4f4e4ed8] border-black rounded-full bottom-[-40px] left-1/2 -translate-x-1/2 flex">
         
         <button 
           className={`font-medium border-r-2 border-slate-900 px-6 py-3 rounded-l-full transition-all duration-300

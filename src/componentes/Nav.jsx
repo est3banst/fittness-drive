@@ -21,7 +21,10 @@ const Nav = () => {
         </Link>
        <div className='hidden lg:flex w-full gap-8 justify-around items-center'>
        <ul className='flex gap-8 font-bold '>
-            <li className='hover:text-[#e5691c] cursor-pointer'>Clases</li>
+      <Link to="/clases">
+      <li className='hover:text-[#e5691c] cursor-pointer'>Clases</li>
+
+      </Link>
             <li className='hover:text-[#e5691c] cursor-pointer'>Entrenadores</li>
             <li className='hover:text-[#e5691c] cursor-pointer'>Agenda</li>
             <li className='hover:text-[#e5691c] cursor-pointer'>Contacto</li>
@@ -41,25 +44,34 @@ const Nav = () => {
         <div className={`w-6 h-[2px] relative transition-all duration-1000 ease-in-out bg-[#f2f2f2] ${isOpen ? 'opacity-0' : ''}`}></div>
         <div className={`w-6 h-[2px] relative transition-all duration-1000 ease-in-out bg-[#f2f2f2] ${isOpen ? '-rotate-45 -translate-y-3' : ''}`}></div>
        </div>
-       <div className={`bg-gradient-to-b from-[#242424] via-[#272727] to-[#a6611c] flex flex-col h-screen w-full overflow-hidden z-0 anton fixed transition-all duration-700 ease-out opacity-0 right-0 ${isOpen ? 'opacity-100 z-[987]' : 'opacity-0 z-0'}`}>
+       <div className={`bg-gradient-to-b from-[#242424] via-[#272727] to-[#a6611c] flex flex-col h-screen w-full overflow-hidden anton fixed -translate-x-full transition-all duration-700 ease-out opacity-0 right-0 ${isOpen ? 'opacity-100 z-[987] translate-x-0' : 'opacity-0 z-0'}`}>
+     <Link to="/">
      <img
         className='max-w-24 p-4'
         src="fitdrive.svg" alt="Fitness Drive logo" />
+     </Link>
     <div className='flex flex-col justify-between h-full'>
-    <ol className='flex px-2 text-2xl flex-col pt-20 gap-3'>
+    <ol className='flex px-2 relative text-2xl flex-col pt-20 gap-3'>
 
-{["Clases", "Entrenadores", "Agenda", "Contacto"].map((item, index) => (
-    <li key={index}
+{mobileMenu.map((item, index) => (
+   <Link 
+   key={index}
+   to={item.link}>
+    <li
         className='relative bg-[#22222149] hover:scale-[102%] transition-all duration-500 ease-in cursor-pointer p-3 max-w-2xs 
         before:absolute before:inset-0 before:border before:border-transparent before:rounded-md 
         before:transition-all before:duration-500 hover:before:border-amber-500'>
-        {item}
+        {item.text}
     </li>
+   </Link>
 ))}
 
 </ol>
+<Link to="/membresias" className='self-center'>
 <button className='bg-amber-600 hover:bg-amber-200 transition-all duration-700 ease-in hover:text-slate-900 cursor-pointer mx-auto w-max px-12 mb-4 py-6 text-2xl'>
-UNIRME HOY</button>
+UNIRME HOY
+</button>
+</Link>
     </div>
 </div>
 
@@ -68,3 +80,22 @@ UNIRME HOY</button>
 }
 
 export default Nav
+
+const mobileMenu = [
+  {
+    text: 'Clases',
+    link: '/clases'
+  },
+  {
+    text: 'Entrenadores',
+    link: '/entrenadores',
+  },
+  {
+    text: 'Agenda',
+    link: '/agenda',
+  },
+  {
+    text: 'Contacto',
+    link: '/agenda',
+  }
+]

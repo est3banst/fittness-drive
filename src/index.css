@@ -20,6 +20,12 @@
   background: rgb(229,153,103);
   background: linear-gradient(90deg, #e59967 6%, #e5691c 48%, rgba(23,23,23,1) 98%);
 }
+.custom-clases {
+  background: linear-gradient(to right, #ff8c006b, #ff8800);
+  clip-path: polygon(100% 51%, 100% 84%, 100% 100%, 0% 100%, 50% 88%, 80% 75%);
+
+}
+
 .custom-size {
   font-size: 8px;
 }
