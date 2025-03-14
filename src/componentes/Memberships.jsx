@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Memberships = ({ title, desc, popular, price, plan , points }) => {
+const Memberships = ({ title, desc, save, popular, price, plan , points }) => {
     return (
       <div className={`group-hover:translate-y-1.5 anton p-6 relative transition-all duration-700 ease-in`}
         style={{ background: popular }}>
+           {save &&  (<span className='bg-green-500 px-2 py-1 rounded-md text-xs absolute top-0 right-0 font-sans text-slate-900'>
+                Ahorras ${save}
+                </span>)}
           <h2 className='uppercase text-2xl'>{title}</h2>
           <p className='text-slate-400'>{desc}</p>
           <span className='text-3xl'>{price}<b className='text-slate-400 text-xs'>/{plan}</b></span>

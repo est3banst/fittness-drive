@@ -16,6 +16,13 @@
   scrollbar-width: 9px;
   scrollbar-color: #c5691c #f2f2f2;
 }
+.custom-bg {
+  background: rgb(229,153,103);
+  background: linear-gradient(90deg, #e59967 6%, #e5691c 48%, rgba(23,23,23,1) 98%);
+}
+.custom-size {
+  font-size: 8px;
+}
 .anton {
   font-family: 'Anton', serif;
 }

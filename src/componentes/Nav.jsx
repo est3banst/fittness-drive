@@ -26,7 +26,10 @@ const Nav = () => {
             <li className='hover:text-[#e5691c] cursor-pointer'>Agenda</li>
             <li className='hover:text-[#e5691c] cursor-pointer'>Contacto</li>
         </ul>
+        <Link to="/membresias">
         <button className='px-6 py-3 rounded-xs cursor-pointer hover:bg-slate-50 hover:text-[#e5691c] bg-[#e5691c] uppercase'>Unite hoy</button>
+
+        </Link>
        </div>
 
        
