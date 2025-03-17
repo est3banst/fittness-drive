@@ -115,7 +115,7 @@ export const MemberPlans = () => {
 
     <Nav />
     </div>
-    <div className='bg-[url(/dumbells-memb.jpg)] flex items-center relative bg-no-repeat bg-cover w-full h-[50vh] md:h-screen'>
+    <div className='bg-[url(/dumbells-memb.webp)] flex items-center relative bg-no-repeat bg-cover w-full h-[50vh] md:h-screen'>
     <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
 
   <span className='absolute left-10 md:left-20 top-3/4 -translate-y-1/2 text-5xl md:text-7xl anton text-white'>

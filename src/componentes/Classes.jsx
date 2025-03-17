@@ -36,20 +36,20 @@ export default Classes
 const clases = [
     {
         text: 'HIIT',
-        src: 'hiit-fit.jpg',
+        src: 'hiit-class.webp',
         alt: 'HIIT Clases',
         link: '#'
     },
     {
         text: 'Powerlifting',
-        src: 'powrrlift-fit.jpg',
+        src: 'powrrlift-fit.webp',
         alt: 'Powerlift sesión',
         link: '#'
 
     },
     {
         text: 'Boxeo',
-        src: 'boxing-gloves.jpg',
+        src: 'boxing-gloves.webp',
         alt: 'Boxeo clases',
         link: '#'
     },
