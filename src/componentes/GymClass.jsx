@@ -11,7 +11,7 @@ const GymClass = ({ text, src, alt, link }) => {
                 <img className="w-full h-full object-cover rounded-lg" src={src} alt={alt} />
                 <div className='h-full absolute w-full bg-white/5 flex items-start justify-end flex-col gap-4 p-4 left-0 bottom-0'>
                     <p className='text-white px-2 relative z-50 font-black text-xl'>{text}</p>
-                    <button className='p-2 border-[.5px] cursor-pointer bg-[#c0682d] font-medium hover:bg-white/90 hover:text-[#cb7e58] relative z-50 border-slate-500'>Más información</button>
+                    <button className='px-4 py-2 border-[.5px] cursor-pointer bg-amber-600 uppercase font-bold hover:bg-white/90 hover:text-[#cb7e58] relative z-50 border-slate-500'>Ver más</button>
                 </div>
             </article>
         </>

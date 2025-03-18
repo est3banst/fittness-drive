@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <footer className='px-2'>
+        <footer className='px-2 bg-footer py-4'>
 
       
-        <div className='py-8 relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-2'>
-            <section className='flex flex-col'>
+        <div className='py-8 relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-3 lg:grid-cols-4 m-2'>
+            <section className='flex py-6 flex-col'>
                 <h2 className='anton text-xl'>Fitness Drive Gym</h2>
                 <span className='flex gap-3 py-6'>
                     <a
@@ -60,7 +60,7 @@ const Footer = () => {
             </section>
             <section>
                 <h2 className='font-bold border-l-4 px-2 mb-2 border-amber-600'>Vinculos</h2>
-                <span className='flex flex-col gap-2 my-4'>
+                <span className='flex flex-col gap-3 my-4'>
                 <Link to='/clases'> 
                 Clases
                 </Link>
@@ -76,7 +76,7 @@ const Footer = () => {
             </section>
             <section>
                 <h2 className='font-bold border-l-4 px-2 mb-2 border-amber-600'>Contacto</h2>
-                <span className='flex flex-col gap-2 my-4'>
+                <span className='flex flex-col gap-3 my-4'>
                     <a href="https://www.google.com/maps/">123 Main St. Uruguay, 15100</a>
                     <a href="tel:+59847226312">(+598) 47226312</a>
                     <a href="mailto:info@fitnessdrive.com">info@fitnessdrive.com</a>
@@ -84,7 +84,7 @@ const Footer = () => {
             </section>
             <section>
                 <h2 className='font-bold border-l-4 px-2 mb-2 border-amber-600'>Horarios</h2>
-                <span className='flex flex-col gap-2 my-4'>
+                <span className='flex flex-col gap-3 my-4'>
                     <p>Lun.-Viernes : 8:00 AM - 23:00 PM</p>
                     <p>Sábado : 9:00 AM - 22:00 PM</p>
                     <p>Domingo: 10:00 AM - 22:00 PM</p>

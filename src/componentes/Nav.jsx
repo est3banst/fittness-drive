@@ -27,7 +27,10 @@ const Nav = () => {
       </Link>
             <li className='hover:text-[#e5691c] cursor-pointer'>Entrenadores</li>
             <li className='hover:text-[#e5691c] cursor-pointer'>Agenda</li>
-            <li className='hover:text-[#e5691c] cursor-pointer'>Contacto</li>
+    <Link to='/contacto'>
+    <li className='hover:text-[#e5691c] cursor-pointer'>Contacto</li>
+
+    </Link>
         </ul>
         <Link to="/membresias">
         <button className='px-6 py-3 rounded-xs cursor-pointer hover:bg-slate-50 hover:text-[#e5691c] bg-[#e5691c] uppercase'>Unite hoy</button>
@@ -58,7 +61,7 @@ const Nav = () => {
    key={index}
    to={item.link}>
     <li
-        className='relative bg-[#22222149] hover:scale-[102%] transition-all duration-500 ease-in cursor-pointer p-3 max-w-2xs 
+        className='relative bg-[#22222149] hover:scale-[102%] transition-all uppercase duration-500 ease-in cursor-pointer p-3 w-full 
         before:absolute before:inset-0 before:border before:border-transparent before:rounded-md 
         before:transition-all before:duration-500 hover:before:border-amber-500'>
         {item.text}
@@ -96,6 +99,6 @@ const mobileMenu = [
   },
   {
     text: 'Contacto',
-    link: '/agenda',
+    link: '/contacto',
   }
 ]

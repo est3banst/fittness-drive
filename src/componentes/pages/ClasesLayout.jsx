@@ -39,7 +39,7 @@ const ClasesLayout = () => {
       inst: 'Eduardo Hall',
       src: 'powerlift.webp',
       time: '80',
-      diff: 'Avanzado'
+      diff: 'Intermedio'
     },
     {
       title: 'Crossfit Elite',
@@ -60,7 +60,7 @@ const ClasesLayout = () => {
     {
       title: 'Yoga',
       desc: 'Conecta tu mente con tu cuerpo con movimientos dinámicos que mejoran tu postura y disminuyen tu estrés',
-      inst: 'Diana Urie',
+      inst: 'Diana Uribe',
       src: 'yoga.webp',
       time: '60',
       diff: 'Principiante',
@@ -113,12 +113,12 @@ const ClasesLayout = () => {
           <img
             src="gymtime.webp"
             className='
-        rounded-lg max-h-5/6 bottom-10 my-auto absolute object-cover md:object-contain transition-transform duration-500 ease-in-out 
+        rounded-lg md:max-h-5/6 h-full pt-10 md:pt-0 bottom-10 absolute object-cover md:object-contain transition-transform duration-500 ease-in-out 
         hover:scale-[102%]'
             alt=""
           />
 
-          <span className='absolute bottom-2 left-20 text-center w-44 h-auto bg-black/40 text-white rounded-lg p-4 uppercase font-bold text-base shadow-md'>
+          <span className='absolute bottom-2 left-20 text-center w-44 h-auto bg-white/40 text-white rounded-lg p-4 uppercase font-bold text-base shadow-md'>
             Primer clase - 8:30 AM
           </span>
 

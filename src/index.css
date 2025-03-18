@@ -13,8 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 * {
-  scrollbar-width: 9px;
-  scrollbar-color: #c5691c #f2f2f2;
+  scrollbar-color: #c5691c #252525;
 }
 .custom-bg {
   background: rgb(229,153,103);
@@ -25,6 +24,12 @@
   backdrop-filter: blur(5px);
   clip-path: polygon(100% 51%, 100% 84%, 100% 100%, 0% 100%, 50% 88%, 80% 75%);
 
+}
+.custom-scroll {
+  scrollbar-width: 6px;
+  scrollbar-3dlight-color: #8a4c19;
+  border-radius: 4px;
+  scrollbar-color: #c84c17 #242424;
 }
 
 .custom-size {
@@ -37,3 +42,7 @@
   font-family: 'Anton SC' , serif;
 }
 
+.bg-footer {
+  background: rgb(73,73,73);
+background: linear-gradient(90deg, rgb(33, 32, 32) 3%, rgba(84,54,17,0.2262018557422969) 12%, rgba(47,47,47,1) 24%, rgba(34,32,34,1) 53%, rgb(36, 36, 36) 71%, rgba(79,53,24,0.3038209033613446) 84%, rgba(23,23,23,1) 96%);
+}
