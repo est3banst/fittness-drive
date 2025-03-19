@@ -5,7 +5,7 @@ import Footer from '../Footer'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-export const MemberPlans = () => {
+const MemberPlans = () => {
     useEffect(() => {
         scrollTo(0, 0);
     }, [])
@@ -162,3 +162,4 @@ export const MemberPlans = () => {
   )
 }
 
+export default MemberPlans;

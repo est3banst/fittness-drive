@@ -1,31 +1,47 @@
-import Nav from './componentes/Nav'
-import Hero from './componentes/Hero'
-import Section from './componentes/Section'
-import Classes from './componentes/Classes'
-import Started from './componentes/Started'
-import Footer from './componentes/Footer'
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom'; 
+import Loading from './componentes/Loading';
+import AppRoutes from "./componentes/AppRoutes";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const location = useLocation(); 
+
+  useEffect(() => {
+
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    console.log(location)
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
 
   return (
-    <>
-      <div className='grid h-auto overflow-hidden grid-cols-1'>
-        <div className='relative'>
-        <Nav />
-        <Hero />
+    <div className="w-full">
+      {loading ? (
+       <div className="flex w-full h-screen justify-center items-center">
+      <Loading />
+
+       </div>
+      ) : (
+        <div className="">
+
+          <AppRoutes/>
         </div>
-        <Section/>
-        <div className='h-auto flex flex-col relative'>
-    <Classes/>
-    
-
+      )}
     </div>
+  );
+};
 
-    <Started/>
-    <Footer/>
-      </div>
-    </>
-  )
-}
 
 export default App

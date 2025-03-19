@@ -9,10 +9,10 @@ const ContactLayout = () => {
     return (
         <>
             <Nav />
-            <div className='bg-[url(/contact-gym.webp)] bg-cover bg-bottom relative md:bg-center h-[80vh]'></div>
-            <div className='absolute inset-0 bg-linear-to-b from-transparent via-[#02020244] to-[#020202] h-[80vh]'></div>
+            <div className='bg-[url(/contact-gym.webp)] bg-cover relative bg-left-top h-[50vh]'></div>
+            <div className='absolute inset-0 bg-linear-to-b from-transparent via-[#02020244] to-[#020202] h-[50vh]'></div>
 
-            <span className='absolute top-1/2'>
+            <span className='absolute top-1/3'>
                 <h2 className='px-3 text-6xl text-amber-600 font-black anton md:text-8xl uppercase'>Contacto</h2>
             </span>
             <div className='grid grid-cols-1 py-16 lg:grid-cols-2 gap-2 p-4 bg-[#02020224] w-full'>
@@ -81,7 +81,7 @@ const ContactLayout = () => {
                         <input className='border-[.5px] focus:bg-white focus:text-slate-900 w-full rounded-xs border-gray-500 py-1 px-2' type="text" />
                     </div>
                     <div className='flex w-full justify-between items-center gap-2'>
-                        <label className='text-lg font-medium anton w-32' htmlFor="">Tema: </label>
+                        <label className='text-lg font-medium anton w-32' htmlFor="">Asunto: </label>
                         <select className='border-[.5px] rounded-xs w-full border-gray-500 py-1 px-2' name="" id="">
                             <option value="">Membresías</option>
                             <option value="">Entrenamiento Personalizado</option>
